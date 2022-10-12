@@ -447,6 +447,240 @@ main {
 }
 
 
+.achievements {
+    background-color: #1C5981;
+    margin-top: 5vh;
+    padding: 5vw;
+    height: 100vh;
+}
+
+.achievements-heading h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    margin-top: 2vh;
+}
+
+.achievements-icon {
+    height: 50px;
+}
+
+.achievements-icon img {
+    height: 100%;
+}
+
+.achievement-underline {
+    height: 5px;
+    width: 5vw;
+    background-color: #9FC4DC;
+    margin-top: 2vh;
+}
+
+.achievements-main {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.achievement-carousel {
+    width: 50%;
+    position: relative;
+}
+
+.achievement-carousel img {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    transition: 0.5s;
+}
+
+.achievement-details {
+    display: flex;
+    width: 50%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.achievement-details ul {
+    width: 60%;
+}
+
+.achievement-details ul li {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.achievement-list-underline {
+    height: 4px;
+    width: 15vw;
+    background-color: #9FC4DC;
+    transition: 1s;
+}
+
+#achievement-image-2, #achievement-image-3, #achievement-image-4 {
+    opacity: 0;
+}
+
+#achievement-underline-2, #achievement-underline-3, #achievement-underline-4 {
+    width: 0;
+}
+
+.achievements-design {
+    position: absolute;
+    z-index: 999;
+    height: 60vh;
+    right: 10vw;
+}
+
+.achievements-design img {
+    height: 100%;
+}
+
+.reviews {
+    background-color: #1C5981;
+    margin-top: 5vh;
+    padding: 5vw;
+    position: relative;
+    height: 100vh;
+}
+
+.reviews-heading-icon {
+    height: 50px;
+}
+
+.reviews-heading-icon img {
+    height: 100%;
+}
+
+.reviews-heading h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    margin-top: 2vh;
+}
+
+.reviews-underline {
+    height: 5px;
+    width: 5vw;
+    background-color: #9FC4DC;
+    margin-top: 2vh;
+}
+
+.review-card {
+    background: rgba(60, 158, 222, 0.8);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    width: 30vw;
+    padding: 1vw 2vw;
+    position: absolute;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+}
+
+.review-user img {
+    height: 40px;
+    margin-right: 1vw;
+}
+
+.review-user p {
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-right: 1vw;
+}
+
+.review-user i {
+    color: white;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.review-rating p {
+    margin-right: 0.5vw;
+}
+
+.review-rating i {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.review-body {
+    color: white;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+#review-card-1 {
+    top: 30vh;
+    left: 10vw;
+}
+
+#review-card-2 {
+    top: 23vh;
+    left: 42vw;
+}
+
+#review-card-3 {
+    top: 55vh;
+    left: 15vw;
+}
+
+#review-card-4 {
+    top: 48vh;
+    left: 48vw;
+}
+
+.review-bg-icons {
+    height: 150px;
+    position: absolute;
+}
+
+.review-bg-icons img {
+    height: 100%;
+}
+
+.review-thumbs {
+    right: 10vw;
+    top: 10vh;
+}
+
+.review-star {
+    right: 8vw;
+    bottom: 10vh;
+}
+
+.review-smile {
+    bottom: 10vh;
+    left: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
