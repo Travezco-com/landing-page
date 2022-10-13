@@ -64,14 +64,47 @@ nav {
     color: #0487DA;
 }
 
-main {
-    min-height: 80vh;
-    padding-top: 80px;
+.home {
+    height: 130vh;
+    background-image: url("/assets/img/home-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
+.home-text {
+    font-weight: 800;
+    width: 60%;
+    padding-left: 10%;
+    padding-top: 13%;
+    font-size: 2.4rem;
+    color: #171717;
+}
 
+.home-logo {
+    position: absolute;
+    height: 200px;
+    right: 15vw;
+    top: 20vh;
+    animation: up-down 3s infinite;
+}
 
+.home-logo img {
+    height: 100%;
+}
 
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .why-us {
     display: flex;
@@ -446,12 +479,71 @@ main {
     margin-right: 10px;
 }
 
+.gallery {
+    padding: 5vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.gallery-row {
+    width: 33.33333333%;
+    height: 100%;
+}
+
+.gallery-row img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image-upper {
+    height: 40%;
+    object-fit: contain;
+}
+
+.gallery-image-lower {
+    height: 60%;
+    object-fit: contain;
+}
+
+.gallery-title {
+    height: 40%;
+    background-color: #1C5981;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-left: 5vw;
+}
+
+.gallery-icon {
+    width: 100px;
+}
+
+.gallery-icon img {
+    width: 100%;
+}
+
+.gallery-title h2 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.gallery-underline {
+    height: 5px;
+    width: 70%;
+    background-color: #9FC4DC;
+    margin-top: 2vh;
+}
 
 .achievements {
     background-color: #1C5981;
     margin-top: 5vh;
-    padding: 5vw;
-    height: 100vh;
+    padding: 3vw 5vw;
+    height: 85vh;
 }
 
 .achievements-heading h2 {
@@ -479,6 +571,7 @@ main {
 .achievements-main {
     display: flex;
     margin-top: 5vh;
+    position: relative;
 }
 
 .achievement-carousel {
@@ -488,8 +581,8 @@ main {
 
 .achievement-carousel img {
     position: absolute;
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
     transition: 0.5s;
 }
 
@@ -509,7 +602,7 @@ main {
     margin-bottom: 2vh;
     color: white;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .achievement-list-underline {
@@ -529,9 +622,9 @@ main {
 
 .achievements-design {
     position: absolute;
-    z-index: 999;
     height: 60vh;
-    right: 10vw;
+    right: 5vw;
+    bottom: -5vh;
 }
 
 .achievements-design img {
@@ -541,9 +634,9 @@ main {
 .reviews {
     background-color: #1C5981;
     margin-top: 5vh;
-    padding: 5vw;
+    padding: 3vw 5vw;
     position: relative;
-    height: 100vh;
+    height: 85vh;
 }
 
 .reviews-heading-icon {
@@ -667,22 +760,6 @@ main {
     bottom: 10vh;
     left: 1vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     position: relative;
