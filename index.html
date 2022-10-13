@@ -38,6 +38,28 @@
             <div class="home-logo">
                 <img src="/assets/favicon.png" alt="Logo">
             </div>
+            <div class="contact-us">
+                <div class="contact-initial" onclick="contactOpen()">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>Contact Us</p>
+                </div>
+                <div class="contact-later">
+                    <i class="fa-solid fa-x contact-x" onclick="contactClose()"></i>
+                    <h4>Contact Us</h4>
+                    <img src="/assets/img/contact.png" alt="Contact">
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 83969 57516</p>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@travezco.com</p>
+                        </div>
+                    </div>
+                    <p class="contact-note">To get more info about our <b>current ongoing trips, price quotes, help</b> get in touch us at our Social Handles or E-Mail/ Contact No.</p>
+                </div>
+            </div>
         </div>
         <div class="why-us" id="why-us">
             <div class="why-us-desc">
@@ -159,28 +181,36 @@
                 <div class="meet-our-team-underline"></div>
                 <div class="team-values">
                     <h3>Our Values</h3>
-                    <p>Initially, we started as a team of students from IIT Delhi from different backgrounds. Now Travezco is a team of experienced market experts, travel service providers, and hardworking and creative youngsters who are together working to create unforgettable and memorable travel experiences.</p>
+                    <p>Our team comprises of students from IITD and neighbouring colleges from around Delhi mentored by IITD alumini. We are a group of highly motivated individuals with deep technical and business knowledge. We like to leverage our innovative insights to solve real world problems - problems that affect you. Together, we have a vision to make Travezco a success.</p>
                 </div>
             </div>
             <div class="meet-our-team-right">
                 <div class="team-carousel-squares">
+                    <div class="team-carousel-square square-prev-prev"></div>
                     <div class="team-carousel-square square-prev"></div>
                     <div class="team-carousel-square square-selected"></div>
                     <div class="team-carousel-square square-next"></div>
+                    <div class="team-carousel-square square-next-next"></div>
                 </div>
                 <div class="team-carousel">
                     <div class="team-carousel-button">
                         <i class="fa-solid fa-angle-left" onclick="movePrev()"></i>
                     </div>
                     <div class="team-carousel-main">
+                        <div class="team-carousel-image carousel-prev-prev">
+                            <img src="/assets/img/team/milan.png" alt="Team Member">
+                        </div>
                         <div class="team-carousel-image carousel-prev">
-                            <img src="/assets/img/team/shashank.jpeg" alt="Team Member">
+                            <img src="/assets/img/team/vipul.jpeg" alt="Team Member">
                         </div>
                         <div class="team-carousel-image carousel-selected">
                             <img src="/assets/img/team/rupesh.jpeg" alt="Team Member">
                         </div>
                         <div class="team-carousel-image carousel-next">
-                            <img src="/assets/img/team/vipul.jpeg" alt="Team Member">
+                            <img src="/assets/img/team/shashank.jpeg" alt="Team Member">
+                        </div>
+                        <div class="team-carousel-image carousel-next-next">
+                            <img src="/assets/img/team/abhinav.png" alt="Team Member">
                         </div>
                     </div>
                     <div class="team-carousel-button">
@@ -373,8 +403,9 @@
             <img src="/assets/img/footer-bg.png" alt="Footer">
         </div>
     </footer>
+    <script src="/assets/js/achievements.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <script src="/assets/js/nav.js"></script>
     <script src="/assets/js/team.js"></script>
-    <script src="/assets/js/achievements.js"></script>
 </body>
 </html>
