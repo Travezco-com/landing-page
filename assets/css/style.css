@@ -64,6 +64,20 @@ nav {
     color: #0487DA;
 }
 
+@media (max-width: 865px) {
+    nav {
+        padding: 0 3vw;
+        background: rgba(248, 248, 248, 1) !important;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-social {
+        font-size: 1.5rem;
+        width: 100px;
+    }
+}
+
 .home {
     height: 110vh;
     background-image: url("/assets/img/home-bg.png");
@@ -92,6 +106,24 @@ nav {
 
 .home-logo img {
     height: 100%;
+}
+
+@media (max-width: 865px) {
+    .home {
+        height: 100vh;
+    }
+    .home-text {
+        font-size: 1rem;
+        width: 90%;
+        padding-top: 15vh;
+        padding-left: 5%;
+    }
+    .home-logo {
+        animation: none;
+        height: 70px;
+        right: 60vw;
+        top: 23vh;
+    }
 }
 
 @keyframes up-down {
@@ -203,6 +235,11 @@ nav {
     width: 50%;
 }
 
+.contact-detail a {
+    text-decoration: none;
+    color: black;
+}
+
 .contact-detail i {
     color: #0487DA;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
@@ -212,6 +249,45 @@ nav {
 .contact-detail p {
     font-weight: 600;
     font-size: 1rem;
+}
+
+@media (max-width: 865px) {
+    .contact-us {
+        bottom: 5vh;
+        width: 70px;
+    }
+    .contact-details {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .contact-detail {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .contact-later .contact-x {
+        top: 8px;
+        right: -10px;
+    }
+    .contact-initial p {
+        display: none;
+    }
+    .contact-initial i {
+        margin-right: 0px;
+    }
+    @keyframes contact {
+        0% {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+        100% {
+            width: 300px;
+            height: max-content;
+            min-height: 70px;
+            cursor: default;
+        }
+    }
 }
 
 .why-us {
@@ -270,6 +346,28 @@ nav {
     text-align: center;
 }
 
+@media (max-width: 865px) {
+    .why-us {
+        flex-direction: column;
+    }
+    .why-us-desc {
+        width: 100%;
+    }
+    .why-us-cards {
+        width: 100%;
+    }
+    .why-us-card {
+        height: 80px;
+        width: 80px;
+    }
+    .why-us-card img {
+        height: 20px;
+    }
+    .why-us-card p {
+        font-size: 0.7rem;
+    }
+}
+
 .video {
     width: 100%;
     position: relative;
@@ -298,6 +396,29 @@ nav {
     top: 40%;
     left: 47.5%;
     font-size: 4vw;
+}
+
+@media (max-width: 865px) {
+    .video {
+        height: 30vh;
+    }
+    .video-image {
+        height: 30vh;
+    }
+    .video-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .video i {
+        font-size: 2rem;
+        left: 45%;
+        top: 40%;
+    }
+    .video i:hover {
+        font-size: 2rem;
+        left: 45%;
+        top: 40%;
+    }
 }
 
 .what-we-do {
@@ -383,6 +504,27 @@ nav {
     display: block;
 }
 
+.travel-buddy-right {
+    width: 55%;
+    position: relative;
+}
+
+.travel-buddy-right img {
+    width: 50%;
+}
+
+.buddy-image-1 {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+.buddy-image-2 {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
 .plan-my-trip {
     display: flex;
     margin-top: 5vh;
@@ -390,6 +532,25 @@ nav {
 
 .plan-my-trip-left {
     width: 55%;
+    position: relative;
+}
+
+.plan-my-trip-left img {
+    width: 50%;
+}
+
+.plan-image-1 {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    height: 80%;
+    width: auto !important;
+}
+
+.plan-image-2 {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
 }
 
 .plan-my-trip-right {
@@ -425,6 +586,66 @@ nav {
 .plan-my-trip-icon img {
     height: 100%;
     display: block;
+}
+
+@media (max-width: 865px) {
+    .travel-buddy {
+        flex-direction: column;
+    }
+    .travel-buddy-left {
+        width: 95%;
+        padding: 50px;
+    }
+    .travel-buddy-right {
+        width: 95%;
+        padding: 50px;
+        height: 80vh;
+    }
+    .travel-buddy-right img {
+        width: 100%;
+    }
+    .buddy-image-1 {
+        left: 0;
+        top: 10px;
+    }
+    .buddy-image-2 {
+        left: 0;
+        top: 45vh;
+        bottom: 0;
+        right: 0;
+    }
+    .plan-my-trip {
+        flex-direction: column;
+    }
+    .plan-my-trip-left {
+        width: 95%;
+        margin-left: 5%;
+        position: relative;
+        order: 2;
+        height: 100vh;
+    }
+    .plan-my-trip-left img {
+        width: 100%;
+    }
+    .plan-image-1 {
+        left: auto;
+        right: 0px;
+        height: auto;
+        top: 10px;
+        width: 95vw !important;
+    }
+    .plan-image-2 {
+        left: 0;
+        top: 70vh;
+        bottom: 0;
+        right: 0;
+    }
+    .plan-my-trip-right {
+        width: 95%;
+        order: 1;
+        margin-left: 5%;
+        padding: 50px;
+    }
 }
 
 .meet-our-team {
@@ -601,6 +822,76 @@ nav {
     margin-right: 10px;
 }
 
+.meet-our-team-phone {
+    display: none;
+}
+
+.meet-our-team-phone-card {
+    text-align: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.meet-our-team-phone-card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+}
+
+.team-phone-name {
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+.team-phone-designation {
+    font-weight: 600;
+    text-shadow: 1.1rem;
+    margin-bottom: 1.5vh;
+}
+
+.team-phone-social a {
+    text-decoration: none;
+}
+
+.team-phone-social i {
+    color: white;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 865px) {
+    .meet-our-team {
+        flex-direction: column;
+    }
+    .meet-our-team-underline {
+        width: 50vw;
+    }
+    .meet-our-team-left {
+        width: 100%;
+    }
+    .meet-our-team-right {
+        display: none;
+    }
+    .team-values p {
+        width: 100%;
+    }
+    .meet-our-team-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+}
+
 .gallery {
     padding: 5vw 10vw;
     display: flex;
@@ -612,13 +903,6 @@ nav {
 .gallery-row {
     width: 33.33333333%;
     height: 100%;
-}
-
-.gallery-row img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .gallery-image-upper {
@@ -659,6 +943,36 @@ nav {
     width: 70%;
     background-color: #9FC4DC;
     margin-top: 2vh;
+}
+
+@media (max-width:865px) {
+    .gallery {
+        flex-direction: column;
+        height: 150vh;
+        padding: 1vw;
+    }
+    .gallery-row {
+        display: flex;
+        width: 100%;
+        height: 33.33%;
+    }
+    .gallery-image-lower, .gallery-image-upper {
+        height: 100%;
+    }
+    .gallery-image-lower {
+        width: 45%;
+    }
+    .gallery-image-upper {
+        width: 55%;
+    }
+    .gallery-title {
+        height: 100%;
+        width: 55%;
+        padding-top: 8vh;
+    }
+    .gallery-title h2 {
+        font-size: 10vw;
+    }
 }
 
 .achievements {
@@ -751,6 +1065,41 @@ nav {
 
 .achievements-design img {
     height: 100%;
+}
+
+@media (max-width: 865px) {
+    .achievements {
+        height: 130vh;
+        margin-top: 0;
+    }
+    .achievements-main {
+        flex-direction: column;
+        height: 100%;
+    }
+    .achievement-underline {
+        width: 50vw;
+    }
+    .achievement-carousel {
+        width: 100%;
+        height: 30%;
+    }
+    .achievement-carousel img {
+        width: 100%;
+        left: 0;
+    }
+    .achievement-details {
+        width: 90%;
+        margin-left: 5%;
+        height: 50%;
+    }
+    .achievement-details ul {
+        width: 100%;
+    }
+    .achievements-design {
+        height: 40vh;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .reviews {
@@ -883,6 +1232,40 @@ nav {
     left: 1vw;
 }
 
+@media (max-width: 865px) {
+    .reviews {
+        height: 130vh;
+    }
+    .review-card {
+        width: 80vw;
+        background: rgba(60, 158, 222, 0.9);
+        z-index: 2;
+    }
+    .reviews-underline {
+        width: 50vw;
+    }
+    #review-card-1 {
+        top: 25vh;
+        left: 10vw;
+    }
+    #review-card-2 {
+        top: 50vh;
+        left: 10vw;
+    }
+    #review-card-3 {
+        top: 75vh;
+        left: 10vw;
+    }
+    #review-card-4 {
+        top: 100vh;
+        left: 10vw;
+    }
+    .review-bg-icons {
+        height: 70px;
+        z-index: 1;
+    }
+}
+
 footer {
     position: relative;
     margin-top: 20vh;
@@ -901,7 +1284,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3vh;
     width: 95%;
     margin: auto;
     padding-top: 50px;
@@ -998,4 +1380,54 @@ footer {
 .footer-img img {
     width: 100%;
     display: block;
+}
+
+@media (max-width: 865px) {
+    footer {
+        margin-top: 5vh;
+    }
+    .footer-logo-vision {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 3vh;
+    }
+    .footer-logo {
+        min-width: 60%;
+        max-width: 60%;
+    }
+    .footer-vision {
+        width: 85%;
+        margin-top: 3vh;
+    }
+    .footer-vision h3 {
+        font-size: 4vw;
+    }
+    .footer-vision p {
+        margin-top: 1vh;
+        font-size: 0.8rem;
+    }
+    .footer-contact {
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 25px;
+        margin-top: 3vh;
+    }
+    .footer-contact-details {
+        flex-direction: column;
+        width: 100%;
+        align-items: baseline;
+    }
+    .footer-contact-detail i {
+        margin-bottom: 20px;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    .footer-contact-detail a {
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+    .footer-contact-social {
+        width: 40%;
+        font-size: 1.5rem;
+    }
 }
