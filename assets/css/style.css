@@ -510,19 +510,31 @@ nav {
 }
 
 .travel-buddy-right img {
-    width: 50%;
+    width: 30%;
 }
 
 .buddy-image-1 {
     position: absolute;
-    left: 20px;
-    top: 50px;
+    left: 10vw;
+    top: 80px;
 }
 
 .buddy-image-2 {
     position: absolute;
-    bottom: 50px;
-    right: 20px;
+    top: 20px;
+    right: 10vw;
+}
+
+.buddy-image-3 {
+    position: absolute;
+    bottom: 70px;
+    left: 10vw;
+}
+
+.buddy-image-4 {
+    position: absolute;
+    top: 443px;
+    right: 10vw;
 }
 
 .plan-my-trip {
@@ -536,21 +548,38 @@ nav {
 }
 
 .plan-my-trip-left img {
-    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    width: 30%;
+    object-fit: cover;
 }
 
 .plan-image-1 {
-    position: absolute;
-    left: 20px;
-    top: 50px;
-    height: 80%;
-    width: auto !important;
+    height: 20vw;
+    width: 20vw !important;
+    left: 4vw;
+    top: 20px;
 }
 
 .plan-image-2 {
-    position: absolute;
-    bottom: 50px;
-    right: 20px;
+    height: 13vw;
+    width: 13vw !important;
+    top: 50px;
+    right: 15vw;
+}
+
+.plan-image-3 {
+    height: 10vw;
+    width: 10vw !important;
+    bottom: 60px;
+    left: 20vw;
+}
+
+.plan-image-4 {
+    height: 15vw;
+    width: 15vw !important;
+    bottom: 30px;
+    right: 7vw;
 }
 
 .plan-my-trip-right {
@@ -599,19 +628,27 @@ nav {
     .travel-buddy-right {
         width: 95%;
         padding: 50px;
-        height: 80vh;
+        height: 61vh;
     }
     .travel-buddy-right img {
-        width: 100%;
+        width: 46%;
     }
     .buddy-image-1 {
-        left: 0;
-        top: 10px;
+        left: 5vw;
+        top: 20px;
     }
     .buddy-image-2 {
-        left: 0;
-        top: 45vh;
+        top: 20px;
         bottom: 0;
+        right: 0;
+    }
+    .buddy-image-3 {
+        left: 5vw;
+        bottom: 0px;
+    }
+    .buddy-image-4 {
+        top: auto;
+        bottom: 0px;
         right: 0;
     }
     .plan-my-trip {
@@ -622,23 +659,34 @@ nav {
         margin-left: 5%;
         position: relative;
         order: 2;
-        height: 100vh;
+        height: 50vh;
     }
     .plan-my-trip-left img {
-        width: 100%;
+        width: 35%;
     }
     .plan-image-1 {
-        left: auto;
-        right: 0px;
-        height: auto;
+        width: 50vw !important;
+        height: 50vw !important;
         top: 10px;
-        width: 95vw !important;
+        left: 0;
     }
     .plan-image-2 {
-        left: 0;
-        top: 70vh;
+        width: 35vw !important;
+        height: 35vw !important;
+        top: 40px;
+        right: 5vw;
+    }
+    .plan-image-3 {
+        width: 30vw !important;
+        height: 30vw !important;
+        bottom: 0px;
+        left: 5vw;
+    }
+    .plan-image-4 {
+        width: 40vw !important;
+        height: 40vw !important;
         bottom: 0;
-        right: 0;
+        right: 10vw;
     }
     .plan-my-trip-right {
         width: 95%;
