@@ -996,7 +996,7 @@ nav {
 @media (max-width:865px) {
     .gallery {
         flex-direction: column;
-        height: 150vh;
+        height: 80vh;
         padding: 1vw;
     }
     .gallery-row {
@@ -1016,10 +1016,13 @@ nav {
     .gallery-title {
         height: 100%;
         width: 55%;
-        padding-top: 8vh;
+        padding-top: 2vh;
+    }
+    .gallery-icon {
+        width: 70px;
     }
     .gallery-title h2 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 }
 
@@ -1027,7 +1030,7 @@ nav {
     background-color: #1C5981;
     margin-top: 5vh;
     padding: 3vw 5vw;
-    height: 85vh;
+    height: 90vh;
 }
 
 .achievements-heading h2 {
@@ -1065,7 +1068,7 @@ nav {
 
 .achievement-carousel img {
     position: absolute;
-    width: 60%;
+    width: 80%;
     left: 20%;
     transition: 0.5s;
 }
@@ -1316,7 +1319,7 @@ nav {
 
 footer {
     position: relative;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .footer {
