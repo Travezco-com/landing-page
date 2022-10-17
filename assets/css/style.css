@@ -50,6 +50,11 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    transition: 0.25s;
+}
+
+.nav-links ul li a:hover {
+    color: #0487DA;
 }
 
 .nav-social {
@@ -255,6 +260,8 @@ nav {
     .contact-us {
         bottom: 5vh;
         width: 70px;
+        position: fixed;
+        z-index: 100;
     }
     .contact-details {
         flex-direction: column;
@@ -349,6 +356,8 @@ nav {
 @media (max-width: 865px) {
     .why-us {
         flex-direction: column;
+        padding-top: 8vh;
+        width: 90%;
     }
     .why-us-desc {
         width: 100%;
@@ -371,7 +380,7 @@ nav {
 .video {
     width: 100%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 5vh;
 }
 
 .video-image {
@@ -628,7 +637,7 @@ nav {
     .travel-buddy-right {
         width: 95%;
         padding: 50px;
-        height: 61vh;
+        height: 62vh;
     }
     .travel-buddy-right img {
         width: 46%;
@@ -645,6 +654,8 @@ nav {
     .buddy-image-3 {
         left: 5vw;
         bottom: 0px;
+        height: 24.8vh;
+        object-fit: cover;
     }
     .buddy-image-4 {
         top: auto;
@@ -941,7 +952,7 @@ nav {
 }
 
 .gallery {
-    padding: 5vw 10vw;
+    padding: 5vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -996,8 +1007,7 @@ nav {
 @media (max-width:865px) {
     .gallery {
         flex-direction: column;
-        height: 80vh;
-        padding: 1vw;
+        height: 90vh;
     }
     .gallery-row {
         display: flex;
@@ -1028,7 +1038,6 @@ nav {
 
 .achievements {
     background-color: #1C5981;
-    margin-top: 5vh;
     padding: 3vw 5vw;
     height: 90vh;
 }
