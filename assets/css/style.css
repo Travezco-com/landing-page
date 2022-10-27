@@ -150,14 +150,15 @@ nav {
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1.5vw;
-    bottom: 15vh;
+    bottom: 5vh;
     font-size: 1.2rem;
     transition: 0.5s;
     width: 230px;
     height: 70px;
     overflow: hidden;
+    z-index: 900;
 }
 
 .contact-initial {
@@ -260,7 +261,6 @@ nav {
     .contact-us {
         bottom: 5vh;
         width: 70px;
-        position: fixed;
         z-index: 100;
     }
     .contact-details {
